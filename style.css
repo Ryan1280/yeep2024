@@ -1,0 +1,479 @@
+.div,
+.div * {
+  box-sizing: border-box;
+}
+.div {
+  background: #ffffff;
+  height: 100vh; /* 전체 뷰포트 높이를 사용 */
+  width: 100vw; /* 전체 뷰포트 너비를 사용 */
+  position: relative;
+  overflow: hidden; /* 내용이 div 밖으로 넘어가면 숨김 처리 */
+}
+.div2 {
+  background: #ffffff;
+  width: 1440px; /* 고정 너비 */
+  height: 100vh; /* 전체 뷰포트 높이를 사용 */
+  position: absolute;
+  left: 50%; /* 부모 요소를 기준으로 좌우 중앙에 위치 */
+  transform: translateX(-50%); /* X축 기준으로 자신의 크기의 반만큼 왼쪽으로 이동 */
+  overflow: fixed; /* 내용이 div2 밖으로 넘어가면 숨김 처리 */
+}
+
+
+
+  .image-4 {
+    width: 1440px;
+    height: 368px;
+    position: absolute;
+    left: 1px;
+    top: 96px;
+    object-fit: cover;
+  }
+  .rectangle-2597 {
+    background: #ffffff;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    width: 1440px;
+    height: 96px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  .bottom-app-bar {
+    background: var(
+      --state-layers-outline-variant-opacity-08,
+      rgba(202, 196, 208, 0.08)
+    );
+    border-style: solid;
+    border-color: #5d5c5c;
+    border-width: 1px;
+    padding: 0px 16px 0px 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 276px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 443px;
+    height: 40px;
+    position: absolute;
+    left: 165px;
+    top: 28px;
+  }
+  .leading-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .icon-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    position: relative;
+  }
+  .container {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .state-layer {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+  }
+  .rectangle-2598 {
+    width: 1440px;
+    height: 374px;
+    position: absolute;
+    left: 0px;
+    top: 96px;
+    overflow: visible;
+  }
+  .div3 {
+    color: rgba(0, 0, 0, 0.92);
+    text-align: center;
+    font-family: "Inter-BlackItalic", sans-serif;
+    font-size: 58px;
+    letter-spacing: 0.03em;
+    font-weight: 900;
+    font-style: italic;
+    position: absolute;
+    left: 365px;
+    top: 174px;
+    width: 712px;
+    height: 86px;
+  }
+  .bk-a-c-t-256-1 {
+    width: 105px;
+    height: 58px;
+    position: absolute;
+    left: 21px;
+    top: 19px;
+    object-fit: cover;
+  }
+  .div4 {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    position: absolute;
+    left: 802px;
+    top: 33px;
+  }
+  .div5 {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    position: absolute;
+    left: 958px;
+    top: 33px;
+  }
+  .div6 {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    position: absolute;
+    left: 1114px;
+    top: 33px;
+  }
+  .div7 {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    position: absolute;
+    left: 1270px;
+    top: 33px;
+  }
+  .image-5 {
+    width: 378px;
+    height: 241px;
+    position: absolute;
+    left: 689px;
+    top: 624px;
+    object-fit: cover;
+  }
+  .news {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 273px;
+    top: 476px;
+  }
+  .development-process {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 892px;
+    top: 476px;
+  }
+  .button {
+    background: var(--m3-black, #000000);
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 256px;
+    height: 108px;
+    position: absolute;
+    left: 575px;
+    top: 321px;
+    overflow: hidden;
+  }
+  .state-layer2 {
+    background: var(
+      --state-layers-on-primary-opacity-12,
+      rgba(255, 255, 255, 0.12)
+    );
+    padding: 10px 24px 10px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  .label-text {
+    color: var(--schemes-on-primary, #ffffff);
+    text-align: center;
+    font-family: var(--m3-label-large-font-family, "Roboto-Medium", sans-serif);
+    font-size: var(--m3-label-large-font-size, 14px);
+    line-height: var(--m3-label-large-line-height, 20px);
+    letter-spacing: var(--m3-label-large-letter-spacing, 0.1px);
+    font-weight: var(--m3-label-large-font-weight, 500);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .development-process2 {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 1525px;
+    top: 478px;
+  }
+  .image-7 {
+    width: 378px;
+    height: 241px;
+    position: absolute;
+    left: 689px;
+    top: 624px;
+    object-fit: cover;
+  }
+  .image-2 {
+    width: 587px;
+    height: 368px;
+    position: absolute;
+    left: 21px;
+    top: 609px;
+    object-fit: cover;
+  }
+  .image-6 {
+    width: 319px;
+    height: 370px;
+    position: absolute;
+    left: 1097px;
+    top: 545px;
+    object-fit: cover;
+  }
+  .line-1 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px 0 0 0;
+    width: 572px;
+    height: 0px;
+    position: absolute;
+    left: 949px;
+    top: 470px;
+    transform-origin: 0 0;
+    transform: rotate(90deg) scale(1, 1);
+  }
+  .line-2 {
+    margin-top: -1px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px 0 0 0;
+    width: 1420px;
+    height: 0px;
+    position: fixed;  /* 변경된 위치 속성 */
+    left: 305px;
+    top: 527px;        /* 원래의 절대 위치를 뷰포트 기준 위치로 변경 */
+    z-index: 999;     /* 쌓임 순서 유지 */
+  }
+  
+  .div8 {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    position: absolute;
+    left: 720px;
+    top: 901px;
+  }
+  ._3-d {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    position: absolute;
+    left: 1178px;
+    top: 935px;
+  }
+  .navigation-bar {
+    background: var(
+      --m3-surfaces-light-surface2,
+      linear-gradient(
+        to left,
+        rgba(103, 80, 164, 0.08),
+        rgba(103, 80, 164, 0.08)
+      ),
+      linear-gradient(to left, #fef7ff, #fef7ff)
+    );
+    padding: 0px 8px 0px 8px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 641px;
+    height: 75px;
+    margin-top: 44rem;
+    margin-left: 25.5rem;
+    z-index: 999;
+  }
+  .nav-item-1 {
+    padding: 12px 0px 16px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+  }
+  .icon-container {
+    background: var(--schemes-on-secondary, #ffffff);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .state-layer3 {
+    padding: 4px 20px 4px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 64px;
+    height: 32px;
+    position: relative;
+  }
+  .icon2 {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+  }
+  .label-text2 {
+    color: var(--schemes-on-surface, #1d1b20);
+    text-align: center;
+    font-family: var(
+      --m3-label-medium-prominent-font-family,
+      "Roboto-SemiBold",
+      sans-serif
+    );
+    font-size: var(--m3-label-medium-prominent-font-size, 12px);
+    line-height: var(--m3-label-medium-prominent-line-height, 16px);
+    letter-spacing: var(--m3-label-medium-prominent-letter-spacing, 0.5px);
+    font-weight: var(--m3-label-medium-prominent-font-weight, 600);
+    position: relative;
+    align-self: stretch;
+  }
+  .nav-item-2 {
+    padding: 12px 0px 16px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+  }
+  .icon-container2 {
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 32px;
+    position: relative;
+  }
+  .state-layer4 {
+    padding: 4px 20px 4px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 64px;
+    height: 32px;
+    position: relative;
+  }
+  .icon3 {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+  }
+  .label-text3 {
+    color: var(--schemes-on-surface-variant, #49454f);
+    text-align: center;
+    font-family: var(--m3-label-medium-font-family, "Roboto-Medium", sans-serif);
+    font-size: var(--m3-label-medium-font-size, 12px);
+    line-height: var(--m3-label-medium-line-height, 16px);
+    letter-spacing: var(--m3-label-medium-letter-spacing, 0.5px);
+    font-weight: var(--m3-label-medium-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+  }
+  .nav-item-3 {
+    padding: 12px 0px 16px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+  }
+  .icon4 {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+  }
