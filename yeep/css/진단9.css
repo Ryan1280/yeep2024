@@ -1,0 +1,139 @@
+.child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    box-sizing: border-box;
+    width: 1440px;
+    height: 96px;
+}
+.icon {
+    width: 24px;
+    position: relative;
+    height: 24px;
+}
+.state-layer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+.container {
+    border-radius: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.icon-1 {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.leading-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.bottom-app-bar {
+    position: absolute;
+    top: 28px;
+    left: 165px;
+    background-color: var(--state-layers-outline-variant-opacity-08);
+    border: 1px solid #5d5c5c;
+    box-sizing: border-box;
+    width: 443px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 16px 0px 4px;
+}
+.div1 {
+    position: absolute;
+    top: 33px;
+    left: 1270px;
+}
+.div2 {
+    position: absolute;
+    top: 33px;
+    left: 1114px;
+}
+.div3 {
+    position: absolute;
+    top: 33px;
+    left: 958px;
+}
+.div4 {
+    position: absolute;
+    top: 33px;
+    left: 802px;
+}
+.bk-act-256-1 {
+    position: absolute;
+    top: 19px;
+    left: 21px;
+    width: 105px;
+    height: 58px;
+    object-fit: cover;
+}
+.item {
+    position: absolute;
+    top: 265px;
+    left: 259px;
+    border-radius: 15px;
+    background-color: #d9d9d9;
+    width: 921px;
+    height: 528px;
+}
+.image-16-icon {
+    position: absolute;
+    top: 156px;
+    left: 281px;
+    width: 877px;
+    height: 75px;
+    object-fit: cover;
+}
+.button1 {
+    position: relative;
+    line-height: 100%;
+}
+.button {
+    position: absolute;
+    top: 853px;
+    left: 653px;
+    border-radius: var(--radius-200);
+    background-color: var(--background-brand-default);
+    border: 1px solid var(--background-brand-default);
+    box-sizing: border-box;
+    width: 134px;
+    height: 72px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-300);
+    font-size: var(--single-line-body-base-size);
+    color: var(--text-brand-on-brand);
+}
+.div {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-black);
+    font-family: var(--single-line-body-base);
+}
+
