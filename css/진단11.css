@@ -1,0 +1,91 @@
+.child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: var(--color-white);
+  	border: 1px solid var(--color-black);
+  	box-sizing: border-box;
+  	width: 1440px;
+  	height: 96px;
+}
+.div1 {
+  	position: absolute;
+  	top: 33px;
+  	left: 1270px;
+}
+.div2 {
+  	position: absolute;
+  	top: 33px;
+  	left: 1114px;
+}
+.div3 {
+  	position: absolute;
+  	top: 33px;
+  	left: 958px;
+}
+.div4 {
+  	position: absolute;
+  	top: 33px;
+  	left: 802px;
+}
+.bk-act-256-1 {
+  	position: absolute;
+  	top: 19px;
+  	left: 21px;
+  	width: 105px;
+  	height: 58px;
+  	object-fit: cover;
+}
+.item {
+  	position: absolute;
+  	top: 265px;
+  	left: 259px;
+  	border-radius: 15px;
+  	background-color: #d9d9d9;
+  	width: 921px;
+  	height: 528px;
+}
+.image-18-icon {
+  	position: absolute;
+  	top: 172px;
+  	left: 344px;
+  	width: 692px;
+  	height: 46px;
+  	object-fit: cover;
+}
+.nextbutton-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 14px;
+  	background-color: #2c2c2c;
+  	width: 100px;
+  	height: 59px;
+}
+.next {
+  	position: absolute;
+  	top: 22px;
+  	left: 33px;
+  	line-height: 100%;
+}
+.nextbutton {
+  	position: absolute;
+  	top: 888px;
+  	left: 670px;
+  	width: 100px;
+  	height: 59px;
+  	font-size: var(--single-line-body-base-size);
+  	color: var(--color-white);
+}
+.div {
+  	width: 100%;
+  	position: relative;
+  	background-color: var(--color-white);
+  	height: 1024px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: var(--font-size-5xl);
+  	color: var(--color-black);
+  	font-family: var(--single-line-body-base);
+}
+
