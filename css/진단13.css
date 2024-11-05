@@ -1,0 +1,58 @@
+.child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: var(--color-white);
+  	border: 1px solid var(--color-black);
+  	box-sizing: border-box;
+  	width: 1440px;
+  	height: 96px;
+}
+.div1 {
+  	position: absolute;
+  	top: 33px;
+  	left: 1270px;
+}
+.div2 {
+  	position: absolute;
+  	top: 33px;
+  	left: 1114px;
+}
+.div3 {
+  	position: absolute;
+  	top: 33px;
+  	left: 958px;
+}
+.div4 {
+  	position: absolute;
+  	top: 33px;
+  	left: 802px;
+}
+.bk-act-256-1 {
+  	position: absolute;
+  	top: 19px;
+  	left: 21px;
+  	width: 105px;
+  	height: 58px;
+  	object-fit: cover;
+}
+.image-20-icon {
+  	position: absolute;
+  	top: 287px;
+  	left: 495px;
+  	width: 450px;
+  	height: 450px;
+  	object-fit: cover;
+}
+.div {
+  	width: 100%;
+  	position: relative;
+  	background-color: var(--color-white);
+  	height: 1024px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: var(--font-size-5xl);
+  	color: var(--color-black);
+  	font-family: var(--font-inter);
+}
+
