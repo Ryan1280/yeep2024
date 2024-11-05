@@ -1,5 +1,4 @@
 .child {
-    position: absolute;
     top: 0px;
     left: 0px;
     background-color: var(--color-white);
@@ -7,6 +6,8 @@
     box-sizing: border-box;
     width: 1440px;
     height: 96px;
+    position: relative; /* 기존 스타일에 추가 */
+    overflow: hidden;  /* 기존 스타일에 추가 */
 }
 .div1 {
     position: absolute;
@@ -89,3 +90,27 @@
     font-family: var(--single-line-body-base);
 }
 
+#drawingCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+}
+
+.drawing-tools {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.drawing-tools button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

@@ -1,41 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="initial-scale=1, width=device-width">
-  	
-  	
-  	<link rel="stylesheet" href="global.css" />
-  	<link rel="stylesheet"  href="css/진단9.css" />
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
-  	
-  	
-  	
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="css/진단9.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    
+    <style>
+        .drawing-tools {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 5px;
+            border-radius: 5px;
+            display: flex;
+            gap: 10px;
+        }
+
+        #drawingCanvas {
+            width: 100%;
+            height: 100%;
+            cursor: crosshair;
+        }
+
+        .item {
+            position: relative;  /* 기존 스타일 유지하면서 추가 */
+            overflow: hidden;    /* 캔버스가 영역을 벗어나지 않도록 */
+        }
+    </style>
 </head>
 <body>
-  	
-  	<div class="div">
-    		<div class="child">
-    		</div>
-    		<div class="div1">고객센터</div>
-    		<div class="div2">홍보마당</div>
-    		<div class="div3">정보마당</div>
-    		<div class="div4">참여제안</div>
-    		<img class="bk-act-256-1" alt="" src="i/BK - A.C.T. 256 1.png">
-    		
-    		<div class="item">
-    		</div>
-    		<img class="image-16-icon" alt="" src="i/image 16.png">
-    		
-    		<div class="nextbutton">
-      			<div class="nextbutton-child">
-      			</div>
-      			<div class="next">next</div>
-    		</div>
-  	</div>
-  	
-  	
-  	
-  	
+    <div class="div">
+        <div class="child"></div>
+        <div class="div1">고객센터</div>
+        <div class="div2">홍보마당</div>
+        <div class="div3">정보마당</div>
+        <div class="div4">참여제안</div>
+        <img class="bk-act-256-1" alt="" src="i/BK - A.C.T. 256 1.png">
+        
+        <div class="item">
+            <!-- 그림판 도구 -->
+            <div class="drawing-tools">
+                <button onclick="setColor('black')">검정</button>
+                <button onclick="setColor('red')">빨강</button>
+                <button onclick="setColor('blue')">파랑</button>
+                <button onclick="clearCanvas()">지우기</button>
+                <input type="range" min="1" max="20" value="5" onchange="setLineWidth(this.value)">
+            </div>
+            <canvas id="drawingCanvas"></canvas>
+        </div>
+        
+        <img class="image-16-icon" alt="" src="i/image 16.png">
+        
+        <div class="nextbutton" onclick="window.location.href='진단10.html'">
+            <div class="nextbutton-child"></div>
+            <div class="next">next</div>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('drawingCanvas');
+        const ctx = canvas.getContext('2d');
+        let isDrawing = false;
+        let currentColor = 'black';
+        let currentLineWidth = 5;
+
+        // Canvas 크기를 item div에 맞추기
+        function resizeCanvas() {
+            const parent = canvas.parentElement;
+            canvas.width = parent.clientWidth;
+            canvas.height = parent.clientHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        // 마우스 이벤트 리스너
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('mousemove', draw);
+        canvas.addEventListener('mouseup', stopDrawing);
+        canvas.addEventListener('mouseout', stopDrawing);
+
+        // 터치 이벤트 리스너
+        canvas.addEventListener('touchstart', startDrawingTouch);
+        canvas.addEventListener('touchmove', drawTouch);
+        canvas.addEventListener('touchend', stopDrawing);
+
+        function startDrawing(e) {
+            isDrawing = true;
+            const rect = canvas.getBoundingClientRect();
+            ctx.beginPath();
+            ctx.moveTo(e.clientX - rect.left, e.clientY - rect.top);
+        }
+
+        function startDrawingTouch(e) {
+            e.preventDefault();
+            const touch = e.touches[0];
+            const rect = canvas.getBoundingClientRect();
+            isDrawing = true;
+            ctx.beginPath();
+            ctx.moveTo(touch.clientX - rect.left, touch.clientY - rect.top);
+        }
+
+        function draw(e) {
+            if (!isDrawing) return;
+            const rect = canvas.getBoundingClientRect();
+            ctx.lineTo(e.clientX - rect.left, e.clientY - rect.top);
+            ctx.strokeStyle = currentColor;
+            ctx.lineWidth = currentLineWidth;
+            ctx.lineCap = 'round';
+            ctx.stroke();
+        }
+
+        function drawTouch(e) {
+            e.preventDefault();
+            if (!isDrawing) return;
+            const touch = e.touches[0];
+            const rect = canvas.getBoundingClientRect();
+            ctx.lineTo(touch.clientX - rect.left, touch.clientY - rect.top);
+            ctx.strokeStyle = currentColor;
+            ctx.lineWidth = currentLineWidth;
+            ctx.lineCap = 'round';
+            ctx.stroke();
+        }
+
+        function stopDrawing() {
+            isDrawing = false;
+        }
+
+        function setColor(color) {
+            currentColor = color;
+        }
+
+        function setLineWidth(width) {
+            currentLineWidth = width;
+        }
+
+        function clearCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+    </script>
 </body>
 </html>
